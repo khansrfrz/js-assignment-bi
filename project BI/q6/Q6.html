@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <script src="./q6.js"></script>
-    <h1>PROGRAM TO PRINT SUM OF NUMBERS FROM 1 TO N</h1>
+  <script>
+    function findSum(n) {
+      let result = 0;
+      for (let i = 1; i <= n; i++) {
+        result = result + i;
+      }
+      return result
+    }
+
+    let n = 10;
+    console.log(`Sum of numebers from 1 to ${n} is ${findSum(n)}`)
+  </script>
+  <h1>PROGRAM TO PRINT SUM OF NUMBERS FROM 1 TO N</h1>
 </body>
+
 </html>

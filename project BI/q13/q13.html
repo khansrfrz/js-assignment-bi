@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <script src="./q13.js"></script>
-    <h1>FIND THE NTH NO. OF THE SERIES</h1>
+  <script>
+    const a = 2, b = 5;
+    const N = 7;
+    const findNthTerm = (first, second, num) => {
+      const diff = second - first;
+      const fact = (num - 1) * diff;
+      const term = first + fact;
+      return term;
+    };
+    console.log(findNthTerm(a, b, N));
+  </script>
+  <h1>FIND THE NTH NO. OF THE SERIES</h1>
 </body>
+
 </html>
